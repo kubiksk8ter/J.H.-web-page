@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <!-- <style type="text/css">@import url("mycss.css");</style> -->
+        <title>Jakub Holeček Developer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="About Jakub Holeček">
+        <meta name="keywords" content="Developer, CV, Projects">
+        <meta name="author" content="Jakub Holeček">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="AnimeJS/anime.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="mycss.css">
+    </head>
+    <body>       
+        <header class="background">
+            <!-- JH svg element-->
+            <svg height="117" width="185">
+                <path class='animation1' d="M 30 2 v 0 h 37 c -14 2 -14 2 -14 6 v 88 c 0 25 -37 25 -49 0 c -3 -5 -5 -21 13 -13 c 15 17 -14 15 6 28 c 17 6 21 -10 21 -15 v -88 c 0 -4 0 -4 -14 -6 m 45 0 h 38 c -14 2 -14 2 -14 6 v 45 h 43 v -45 c 0 -4 0 -4 -14 -6 h 38 c -4.6667 2 -14 2 -14 6 v 101 c 0 4 0 4 14 6 v 0 h -38 c 14 -2 14 -2 14 -6 v -53 h -43 v 53 c 0 4 0 4 14 6 h -38 c 14 -2 14 -2 14 -6 v -101 c 0 -4 0 -4 -14 -6 m -16 103 h 10 h 0 v 10 v 0 h -10 v -10 m 113 10 h 10 v -10 h -10 v 10"
+                      style="fill: none; stroke: white; stroke-width: 1px;" />
+                <circle r="2" class="el" fill="#ff3300"/>
+            </svg>
+                       
+        </header>
+        <nav class="sticky-section-top">
+            <a>CV</a>
+            <a>Projects</a>          
+        </nav>
+               
+        <section>
+            <pre id="write"></pre> 
+        </section>        
+        
+        <footer class="background">
+            <address id="bottom">
+                This page was made by Jakub Holeček<br>
+                jakub.holecek31@gmail.com
+            </address>
+        </footer>
+        <script src="animation.js"></script>
+        <!--Helping script to test sticky section-->
+        <script>
+            function test() {
+                var text = "";
+                for (var i = 0; i < 40; i++) {
+                       text += "\n ";
+                }
+                return text;
+            }
+            document.getElementById("write").innerHTML = test();
+                       
+        </script>       
+    </body>
+</html>
